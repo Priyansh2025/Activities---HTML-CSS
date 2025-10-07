@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity</title>
+    <style>
+
+        *{
+            box-sizing:border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+      .container {
+        background-color: orange;
+        height: 1000px;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        /*grid-row-gap: 10px;*/
+        grid-column-gap: 10px;
+        padding: 20px;
+      }
+
+      .box1 {
+        background-color: violet;
+        grid-column: 1/4;
+      }
+
+      .box2 {
+        background-color: green;
+        grid-row: 2/4;
+      }
+      .box3 {
+        background-color: blue;
+        border: 1px solid orange;
+      }
+      .box4 {
+        background-color: black;
+        grid-column: 3/4;
+        grid-row: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box3"></div>
+    </div>
+  </body>
+</html>
